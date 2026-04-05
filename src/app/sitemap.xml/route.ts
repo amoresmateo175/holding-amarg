@@ -1,11 +1,11 @@
+// app/sitemap.xml/route.ts
 type BlogPost = {
   slug: string;
   updatedAt: string;
 };
 
-// Ejemplo: simulando fetch a un backend
+// Simula fetch a backend
 async function getBlogPosts(): Promise<BlogPost[]> {
-  // Reemplaza con fetch real a tu CMS / base de datos
   return [
     { slug: "optimizing-it-operations", updatedAt: "2026-01-10" },
     { slug: "ma-strategies-smb", updatedAt: "2026-02-05" },
@@ -55,6 +55,9 @@ ${urlsXml}
 </urlset>`;
 
   return new Response(sitemapXml, {
-    headers: { "Content-Type": "application/xml" },
+    headers: {
+      "Content-Type": "application/xml",
+      "Cache-Control": "s-maxage=3600, stale-while-revalidate=59",
+    },
   });
 }
