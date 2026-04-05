@@ -1,3 +1,6 @@
+// Marca obligatoria para usar hooks como useState
+"use client";
+
 import { useState } from "react";
 
 export default function Navbar() {
