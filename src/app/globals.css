@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* Scroll suave global */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Design tokens */
+:root {
+  --background: #f5f0eb;       /* fondo crema muy suave */
+  --foreground: #2b1f1a;       /* texto principal oscuro */
+  --primary: #8b4513;          /* cobre/bronce oscuro principal */
+  --primary-dark: #5c2f0c;     /* cobre muy oscuro hover/accent */
+  --accent: #a0522d;           /* tono cálido intermedio */
+}
+
+/* Tailwind theme mapping */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-accent: var(--accent);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1c1815;
+    --foreground: #f5f1ed;
+  }
+}
+
+/* Base styles */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans, Arial, Helvetica, sans-serif);
+}
+
+/* Container utility */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
