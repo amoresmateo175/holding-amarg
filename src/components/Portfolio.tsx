@@ -18,7 +18,7 @@ const divisions: Division[] = [
     priority: "primary",
     companies: [
       { name: "TunnelNet", description: "VLANs, monitoring, cybersecurity", href: "https://tunnelnet-mfpz.vercel.app/" },
-      { name: "Managed IT Services", description: "Full IT infrastructure management" }, // sin href
+      { name: "Managed IT Services", description: "Full IT infrastructure management", href: "https://amarg-it-msp.vercel.app/" }, // sin href
       { name: "WiFi & Connectivity", description: "Routers, access points, optimization", href: "/wifi" },
       { name: "Software Development", description: "Web applications and automation systems" },
     ],
