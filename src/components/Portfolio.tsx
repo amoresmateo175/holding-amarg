@@ -37,7 +37,7 @@ const divisions: Division[] = [
     priority: "tertiary",
     companies: [
       { name: "CCTV & Surveillance", description: "Security and monitoring systems" },
-      { name: "Digital Marketing", description: "SEO, SEM, hosting, reputation", href: "/marketing" },
+      { name: "ReviewKeting", description: "SEO, SEM, hosting, reputation", href: "https://reviewketing.vercel.app/" },
       { name: "Travel Services", description: "Tourism operations to Ecuador" },
     ],
   },
