@@ -20,7 +20,7 @@ const divisions: Division[] = [
       { name: "TunnelNet", description: "VLANs, monitoring, cybersecurity", href: "https://tunnelnet-mfpz.vercel.app/" },
       { name: "AMARG IT Services", description: "Full IT infrastructure management", href: "https://amarg-it-msp.vercel.app/" }, // sin href
       { name: "WiFi & Connectivity", description: "Routers, access points, optimization", href: "/wifi" },
-      { name: "AMARG SoftDev", description: "Web applications and automation systems", href: "https://amarg-it-msp.vercel.app/" },
+      { name: "AMARG SoftDev", description: "Web applications and automation systems", href: "https://amarg-softdev.vercel.app/" },
     ],
   },
   {
