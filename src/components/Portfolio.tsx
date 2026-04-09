@@ -27,7 +27,7 @@ const divisions: Division[] = [
     title: "Infrastructure Services",
     priority: "secondary",
     companies: [
-      { name: "HVAC Systems", description: "Installation and maintenance" },
+      { name: "Relief HVAC", description: "Installation and maintenance", href: "https://relief-hvac.vercel.app/" }, 
       { name: "Electrical Services", description: "Residential and commercial", href: "/electrical" },
       { name: "Garage Door Systems", description: "Installation, repair, automation" },
     ],
