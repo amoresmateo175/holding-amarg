@@ -29,7 +29,7 @@ const divisions: Division[] = [
     companies: [
       { name: "Relief HVAC", description: "Installation and maintenance", href: "https://relief-hvac.vercel.app/" }, 
       { name: "Shine Electricity", description: "Residential and commercial", href: "https://shine-electricity.vercel.app/" },
-      { name: "Garage Door Systems", description: "Installation, repair, automation" },
+      { name: "ShelterPro Overhead Doors", description: "Installation, repair, automation", href: "https://shelterpro-overheaddoors.vercel.app/" },
     ],
   },
   {
